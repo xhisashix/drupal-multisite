@@ -1,0 +1,15 @@
+name: my-multi-site
+recipe: drupal9
+config:
+  webroot: web
+proxy:
+  appserver:
+    - site1.lndo.site
+    - site2.lndo.site
+services:
+  site1_db:
+    type: mysql:5.7
+    portforward: 33068
+  site2_db:
+    type: mysql:5.7
+    portforward: 33069

@@ -1,0 +1,5 @@
+local:
+  root: /app
+  uri: 'http://site2.lndo.site'
+  paths:
+    - files: sites/site2/files
